@@ -10,10 +10,17 @@ class AddressesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "submitting input should make post request and return json" do
+  test "submit should make post request and return text/html" do
     post '/address'
     assert_equal "create", @controller.action_name
-    assert_equal "application/json", @response.content_type
+    assert_equal "text/html", @response.content_type
+    assert_redirected_to :root
+  end
+
+  test "ajax submit should make post request and return js" do
+    post '/address', xhr: true
+    assert_equal "create", @controller.action_name
+    assert_equal "text/javascript", @response.content_type
     assert_response :success
   end
 end
