@@ -25,7 +25,7 @@ class AddressesController < ApplicationController
 
   def record_not_found
     @address = Address.create(query: @query, zero_results: true)
-    render :file => 'addresses/error_no_results.js.erb', :content_type => 'text/javascript'
+    render template: 'addresses/error_no_results', content_type: 'text/javascript'
   end
 
 private
