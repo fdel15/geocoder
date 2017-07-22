@@ -1,5 +1,8 @@
 class AddressesController < ApplicationController
   def index
-    render text: "Hello"
+  end
+
+  def create
+    render json: "Hello World"
   end
 end
