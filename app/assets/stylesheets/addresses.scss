@@ -1,0 +1,25 @@
+.container {
+  .page-title {
+    width: 100%;
+    text-align: center;
+  }
+  .input-section {
+    width: 70%;
+    margin: 0 15%;
+
+    .address-input {
+      width: 70%;
+      border: solid black 1px;
+      padding: 10px;
+    }
+
+    .get-coordinates {
+      width: 25%;
+      vertical-align: top;
+      padding: 6px;
+      color: white;
+      background: green;
+      font-size: 1.0em;
+    }
+  }
+}
