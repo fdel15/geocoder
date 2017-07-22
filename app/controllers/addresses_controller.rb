@@ -1,4 +1,6 @@
 class AddressesController < ApplicationController
+  rescue_from GoogleClientZeroResults, with: :record_not_found
+
   def index
     @addresses = Address.where(new_address: true).where(zero_results: false)
   end
@@ -21,6 +23,10 @@ class AddressesController < ApplicationController
     end
   end
 
+  def record_not_found
+    @address = Address.create(query: @query, zero_results: true)
+    render :file => 'addresses/error_no_results.js.erb', :content_type => 'text/javascript'
+  end
 
 private
 
