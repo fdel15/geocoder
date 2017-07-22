@@ -1,0 +1,9 @@
+@media only screen and (max-width: 620px) {
+  .container {
+    font-size: 0.75em;
+
+    .address-table {
+      overflow-y: hidden;
+    }
+  }
+}
