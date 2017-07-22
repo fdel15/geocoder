@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 20170721223138) do
     t.string   "longitude"
     t.string   "latitude"
     t.string   "query"
-    t.boolean  "is_repeat_address", default: false
-    t.boolean  "zero_results",      default: false
-    t.datetime "created_at",                        null: false
-    t.datetime "updated_at",                        null: false
+    t.boolean  "new_address",  default: true
+    t.boolean  "zero_results", default: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
     t.index ["address"], name: "index_addresses_on_address", using: :btree
     t.index ["query"], name: "index_addresses_on_query", using: :btree
   end

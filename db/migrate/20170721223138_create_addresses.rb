@@ -5,7 +5,7 @@ class CreateAddresses < ActiveRecord::Migration[5.0]
       t.string  :longitude
       t.string  :latitude
       t.string  :query
-      t.boolean :is_repeat_address, default: false
+      t.boolean :new_address, default: true
       t.boolean :zero_results, default: false
       t.timestamps
     end
