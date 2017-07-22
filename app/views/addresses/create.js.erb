@@ -1,0 +1,4 @@
+$('form input[name=query]').val('')
+$('.address-result').html("<%= j render @address %>")
+$('.address-table table tbody').append("<%= j render partial: 'new_row', locals: { address: @address, new_address: @new_address } %>")
+
