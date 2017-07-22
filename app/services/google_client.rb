@@ -4,6 +4,7 @@ class GoogleClient
 
   def initialize(query)
     @response = JSON.parse(RestClient.get("https://maps.googleapis.com/maps/api/geocode/json?address=#{query}&key=#{GOOGLE_API_KEY}"))
+    raise GoogleClientZeroResults.new("Zero results found. Please check your address and try again.") if zero_results?
   end
 
   def formatted_address
