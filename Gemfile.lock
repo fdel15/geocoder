@@ -50,6 +50,16 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+<<<<<<< HEAD
+=======
+    data-table (2.0)
+    domain_name (0.5.20161021)
+      unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.2.0)
+    dotenv-rails (2.2.0)
+      dotenv (= 2.2.0)
+      railties (>= 3.2, < 5.1)
+>>>>>>> 8e4cda2... Add and install Gemfiles
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
@@ -160,6 +170,11 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+<<<<<<< HEAD
+=======
+  data-table
+  dotenv-rails
+>>>>>>> 8e4cda2... Add and install Gemfiles
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
