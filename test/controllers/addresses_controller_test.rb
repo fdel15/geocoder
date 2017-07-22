@@ -9,4 +9,11 @@ class AddressesControllerTest < ActionDispatch::IntegrationTest
     assert_equal "index", @controller.action_name
     assert_response :success
   end
+
+  test "submitting input should make post request and return json" do
+    post '/address'
+    assert_equal "create", @controller.action_name
+    assert_equal "application/json", @response.content_type
+    assert_response :success
+  end
 end
