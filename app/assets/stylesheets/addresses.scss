@@ -1,25 +1,73 @@
 .container {
+  width: 90%;
+  margin: 0 5%;
+
   .page-title {
     width: 100%;
     text-align: center;
   }
+
   form {
     width: 70%;
     margin: 0 15%;
 
-    .address-input {
-      width: 70%;
-      border: solid black 1px;
-      padding: 10px;
+    #center-form-elements {
+      width: 100%;
+      text-align: center;
+
+      .address-input {
+        width: 70%;
+        border: solid black 1px;
+        padding: 10px;
+      }
+
+      .submit-button {
+        width: 40px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: -3px;
+
+        .globe {
+          width: 100%;
+        }
+      }
+
     }
 
-    .get-coordinates {
-      width: 25%;
-      vertical-align: top;
-      padding: 6px;
-      color: white;
-      background: green;
-      font-size: 1.0em;
+  }
+
+/***********************
+  Address Result
+************************/
+
+  .address-result {
+    p { text-align: center; }
+
+    .error-message{
+      color: red;
+      font-weight: bold;
     }
   }
+
+/***********************
+  Address Table
+************************/
+.address-table {
+  margin: 5px 5%;
+  .data_table {
+    width: 100%;
+
+    th, td {
+      border: black 1px solid;
+      padding: 10px;
+      text-align: center;
+    }
+    .address {
+      width: 35%;
+    }
+    .longitude, .latitude, .created_at {
+      width: 18%
+    }
+  }
+ }
 }
