@@ -1,0 +1,8 @@
+<% if address.new_address && new_address %>
+  <tr>
+    <td class='address'><%= address.address %></td>
+    <td class='longitude'><%= address.longitude %></td>
+    <td class='latitude'><%= address.latitude %></td>
+    <td class='created_at'><%= display_date(address.created_at) %></td>
+  </tr>
+<% end %>
