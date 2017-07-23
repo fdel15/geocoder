@@ -44,6 +44,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.6.0'
   gem 'rails-controller-testing'
   gem 'capybara', '~> 2.14.0'
+  gem 'launchy', '~> 2.4.3'
+  gem 'selenium-webdriver'
 end
 
 group :development do

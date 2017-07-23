@@ -2,12 +2,11 @@
   <h3 class="page-title">Geocode Address</h3>
 
     <%= form_tag("/address", remote: true) do %>
-  <p id="center-form-elements">
-      <%= text_field_tag 'query', nil, placeholder: 'Street, City, State, Zipcode, Country', class: 'address-input', required: true %>
-      <span class="submit-button">
-        <%= image_submit_tag "https://openclipart.org/image/2400px/svg_to_png/211386/globe-eurafrica.png", class: "globe" %>
-      </span>
-  </p>
+      <p id="center-form-elements">
+        <%= text_field_tag 'query', nil, placeholder: 'Street, City, State, Zipcode, Country', class: 'address-input', required: true %>
+
+        <span class="submit-button"> <%= image_submit_tag "https://openclipart.org/image/2400px/svg_to_png/211386/globe-eurafrica.png", class: "globe", id: "submit-form" %></span>
+      </p>
     <% end %>
 
   <div class="address-result"></div>
