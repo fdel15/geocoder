@@ -46,6 +46,7 @@ group :development, :test do
   gem 'capybara', '~> 2.14.0'
   gem 'launchy', '~> 2.4.3'
   gem 'selenium-webdriver'
+  gem 'database_cleaner'
 end
 
 group :development do
