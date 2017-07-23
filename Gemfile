@@ -43,6 +43,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.6.0'
   gem 'rails-controller-testing'
+  gem 'capybara', '~> 2.14.0'
 end
 
 group :development do
